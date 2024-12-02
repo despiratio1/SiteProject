@@ -6,7 +6,7 @@
 ```
 python -m venv .venv
 .venv/Scripts/activate.bat
-pip install -r requirments/common.txt
+pip install -r requirements/common.txt
 ```
 
 ## Запуск проекта
