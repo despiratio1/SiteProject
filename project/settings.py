@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u9fk0y)k8db575mc5s6ol7i8g_eth5mp@vqu+!0epc8ezji3sp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ("*",)
 
 # Application definition
 
@@ -36,6 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #_______
+    "ckeditor",
+    "ckeditor_uploader",
+    #_______
     "specialties",
 ]
 
@@ -108,11 +112,17 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static files and media (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
+
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = INSTANCE_DIR / "media"
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
