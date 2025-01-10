@@ -10,3 +10,21 @@ def index(request: HttpRequest) -> HttpResponse:
             "title": "заголовок",
         },
     )
+
+def geography(request: HttpRequest) -> HttpResponse:
+    return render(
+        request,
+        'specialties/geography.html',
+        context={
+            "title": "заголовок",
+        },
+    )
+
+def skills(request: HttpRequest) -> HttpResponse:
+    return render(
+        request,
+        'specialties/skills.html',
+        context={
+            "title": "заголовок",
+        },
+    )
