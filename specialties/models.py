@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class ContentPage(models.Model):
+
     class Meta:
         verbose_name = _("страница с содержимым")
         verbose_name_plural = _("страницы с содержимым")

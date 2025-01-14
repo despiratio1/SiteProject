@@ -1,0 +1,17 @@
+{% extends 'specialties/common.html' %}
+{% block body %}
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5">
+                <h1>{{ contentpage.title }}</h1>
+            </div>
+        </div>
+        <div class="row mb-5 mt-3">
+            {% autoescape off %}
+            <div class="col">{{ contentpage.content }}</div>
+            {% endautoescape %}
+        </div>
+    </div>
+</main>
+{% endblock %}

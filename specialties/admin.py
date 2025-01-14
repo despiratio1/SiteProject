@@ -1,7 +1,6 @@
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django.contrib import admin
 from django import forms
-
 from specialties import models
 
 class ContentPageAdminForm(forms.ModelForm):

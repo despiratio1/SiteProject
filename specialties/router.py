@@ -1,8 +1,7 @@
-from django.urls import path
+from django.urls import path, re_path
 from specialties import views
 
 urlpatterns = (
-    path('', views.index),
-    path('geography', views.geography),
-    path('skills', views.skills),
+    path("", views.index),
+    re_path(r"^contentpage/(?P<pk>\d+)$", views.contentpage, name="contentpage"),
 )
